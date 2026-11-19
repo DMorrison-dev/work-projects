@@ -16,4 +16,6 @@ __pycache__/
 # Data (never commit real records)
 *.xlsx
 *.csv
+# Exception: public school calendars (no student records)
+!calendars/*.csv
 data/raw/
