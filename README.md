@@ -35,11 +35,13 @@ A single audit pipeline implemented **three ways** (SQL, Python, R) from one sha
 
 ```
 sql/        charter_audit_engine.sql        4-layer CTE pipeline (bronze→silver→gold), all 13 fields
+            BigQuery_charter_discrepancy_savings.sql   discrepancies found + money saved (rules, NYSED weekly FTE, savings views)
 python/     charter_audit_engine.py         pandas implementation + CLI + openpyxl export
 r/          charter_audit_engine.R          dplyr/tidyr implementation + openxlsx export
 notebooks/  charter_audit_engine.ipynb      runnable %%sql notebook + severity summary
             nyssis_studentid_matching.ipynb NYSSIS/StudentID resolution (Excel-array ↔ SQL ↔ code)
 docs/       charter_audit_engine_README.md  field-by-field spec, provenance, join rules
+            charter_discrepancy_savings_README.md      savings method, rules, FTE formula, validation
 ```
 
 ---
