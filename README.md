@@ -40,6 +40,10 @@ r/          charter_audit_engine.R          dplyr/tidyr implementation + openxls
 notebooks/  charter_audit_engine.ipynb      runnable %%sql notebook + severity summary
             nyssis_studentid_matching.ipynb NYSSIS/StudentID resolution (Excel-array ↔ SQL ↔ code)
 docs/       charter_audit_engine_README.md  field-by-field spec, provenance, join rules
+
+special-transportation/                     self-contained BigQuery project (de-identified data)
+            README.md                       de-identification method, table spec, data notes
+            sql/                            table DDL, data-quality checks, analysis queries
 ```
 
 ---
